@@ -1,353 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="http://uk.allfont.net/allfont.css?fonts=aquarelle" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/animate.css">
-    <script src="http://code.jquery.com/jquery-1.12.4.js"
-            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-    <title>kaya nova</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LICOR</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="clearfix">
-    <div class="wrap">
-        <div class="sub_nav">
-            <div class="left">
-                <div class="language">
-                    <div class="chosen_language">English</div>
-                    <div class="selector_language">
-                        <div class="lang">Russian</div>
-                        <div class="lang">German</div>
-                        <div class="lang">Spanish</div>
-                        <div class="lang">French</div>
-                        <div class="lang">Romanian</div>
-                    </div>
+<header class="desktop_header  on-the-tab-hide on-the-mobile-hide">
+    <div class="block-center ">
+        <div class="block-left">
 
+            <div class="lang  block-lang inline">
+                <img src="img/uk.png">
+                <div class="name_lang inline">
+                    Ukrain
                 </div>
-
             </div>
-            <a class="where_to_buy" href="">Где купить?</a>
+            <div class="selector-lang">
+                <div class="lang ">
+                    <img src="img/en.png">
+                    <div class="name_lang inline">
+                        english
+                    </div>
+                </div>
+                <div class="lang">
+                    <img src="img/ru.png">
+                    <div class="name_lang inline">
+                        russian
+                    </div>
+                </div>
+                <div class="lang ">
+                    <img src="img/ro.png">
+                    <div class="name_lang inline">
+                        Romania
+                    </div>
+                </div>
+            </div>
 
-            <div class="right">
-                <a class="personal_office">особистий кабінет</a>
-                <a class="basket">корзина</a>
+
+            <div class="search inline">
+                <input type="text" class="input-search" placeholder="поиск">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
         </div>
-        <a class="logotype">
-            <img class=" wow animated pulse" src="img/logo.png">
-            <div class="name_site">
-                kaya wedding
+        <div class="block-right ">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <div class="selection inline">
+                <i class="fa fa-heart" aria-hidden="true">
+                    <div class="number">10</div>
+                </i>избрание
             </div>
-        </a>
-        <nav class="main_menu">
-            <ul>
-                <li class="have_sub_menu">свадібні плаття</li>
-                <li>спеціальні пропосицій</li>
-                <li class="have_sub_menu">о нас</li>
-                <li>сотрубничство</li>
-                <li>новості</li>
-                <li>контакти</li>
-            </ul>
-            <div class="search"><input type="text" class="input_search" placeholder="введите название товара"></div>
-        </nav>
+            <div class="basket inline">
+                <i class="fa fa-shopping-basket" aria-hidden="true">
+                    <div class="number">2</div>
+                </i>
+                корзина
+            </div>
+            <!-- @todo-->
+            <a class="profile-link" href="">
+                <div class="profile inline">
+                    <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    <span class="profil-text">
+                    <div> профиль <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 
+                   <div> и увидить цени</div>
+                    </span>
+                </div>
+            </a>
+        </div>
     </div>
 </header>
-<main>
-    <section class="slider">
-        <div class="block_see_collection   clearfix">
-            <div class="wrap">
-                <div class="left info_for_collection">
-                    <div class="sub_title">collection</div>
-                    <h1 class="name_collection">True love 2018
-                    </h1>
-                    <p class="description"> Необычайно изысканная коллекция свадебных платьев "Prague" отличается
-                        абсолютно новым подходом к созданию каждого образа.
-                        Стильные модели нарядов с идеальными силуэтами и дорогими, качественными тканями</p>
-                    <button class="button">просмотреть </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="wrap">
-        <section class="block_collection">
-            <h1 class="name_collection">Wedding dresses Collections 2017/2018
-
-            </h1>
-            <h2 class="sub_title"> лучшие модели</h2>
-            <div class="photo_collections clearfix">
-                <div class="left_block_collections left">
-                    <div class="collections small_photo">
-                        <img src="img/collection1.png">
-                        <a href="#" class="wow slideInRight info_for_collection">
-                            <h1 class="name_collection">Prague</h1>
-                            <div class="see_collection">посмотреть</div>
-                        </a>
-                    </div>
-                    <div class="collections big_photo">
-                        <img src="img/collection2.png">
-                        <a href="#" class=" wow slideInRight  info_for_collection">
-                            <h1 class="name_collection">Prague</h1>
-                            <div class="see_collection">посмотреть</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="right_block_collections right">
-                    <div class="collections big_photo">
-                        <img src="img/collection3.png">
-                        <a href="#" class="wow slideInRight  info_for_collection">
-                            <h1 class="name_collection">Prague</h1>
-                            <div class="see_collection">посмотреть</div>
-                        </a>
-                    </div>
-                    <div class="collections small_photo">
-                        <img src="img/collection4.png">
-                        <a href="#" class="wow slideInRight  info_for_collection">
-                            <h1 class="name_collection">Prague</h1>
-                            <div class="see_collection">посмотреть</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="see_more"><span>все коллекции</span></a>
-        </section>
-
-        <section class="block_exlusive_dresses clearfix">
-            <div class="left">
-                <a href="#" class="hash_tag">#KAYANOVA</a>
-                <div class="image">
-                    <img class="wow animated fadeInUp " data-wow-duration="3s" src="img/18084274.png">
-                </div>
-            </div>
-
-            <div class="info">
-                <h1>Эксклюзивные дизайнерские платья</h1>
-                <div class="description">All dresses are developed by our designers. They research the trends of wedding
-                    fashion and put their creative solutions and professional experience together to create dresses that
-                    fit all body types, as well as satisfy brides’ tastes.
-
-                    All of our dresses are hand embroidered. This technology improves the visual appeal of the dress.
-                    Fabrics for all models of Kaya Wedding are available in our stock.
-                </div>
-                <a href="#" class="see_more"><span>подробнее</span></a>
-            </div>
-        </section>
+<header class="mob">
+    <div class="mob-nav">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <section class="exhibition clearfix">
-        <div class="wrap">
-            <div class="info">
-                <h1>Выставка 2018
-                    Muse Collection</h1>
-                <div class="description">
-                    All dresses are developed by our designers. They research the trends of wedding fashion and put
-                    their creative solutions and professional .
-                </div>
-                <a href="#" class="button">перейти</a>
-            </div>
-            <div class="photo">
-                <div class="wow animated slideInRight exhibition_img exhibition_img_1" data-wow-duration="2s">
-                    <img src="img/exhibition.png"></div>
-                <div class="wow animated slideInRight exhibition_img exhibition_img_2" data-wow-duration="2s">
-                    <img src="img/exhibition1.png"></div>
-
-            </div>
+    <div class="mob-logo">
+        <h3>LICOR</h3>
+        <p>wedding dresses</p>
+    </div>
+    <div class="selection-and-basket">
+        <div class="selection inline">
+            <i class="fa fa-heart" aria-hidden="true"></i>
         </div>
-    </section>
-    <div class="wrap">
-
-        <section class="news clearfix">
-            <h1>Свежие Новости</h1>
-            <div class="sub_title">не пропустите</div>
-            <div class="left big_block_news">
-                <img class="photo" src="img/news.png">
-                <div class="artical">
-                    <div class="category">
-                        статья
-                    </div>
-                    <div class="date">
-                        август 3, 2017
-                    </div>
-                    <h2 class="name_artical"> Корсетные и безкорсетные свадебные
-                        платья</h2>
-                    <div class="text_artical">
-                        Масштабную проблему выбора<br>
-                        свадебного платьяможно значительно<br> облегчить, предложив невесте
-                        выбрать один из типов платьев: на корсетной основе или безкорсетные. Этот...
-                    </div>
-                    <a class="read_more" href="">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="right two_littel_block">
-                <div class="little_block_news">
-                    <img class="photo" src="img/news1.png">
-                    <div class="artical">
-                        <div class="category">
-                            top dress
-                        </div>
-                        <div class="date">
-                            август 3, 2017
-                        </div>
-                        <h2 class="name_artical"> ТОП-10 платьев для
-                            грушевидной фигуры
-
-                        </h2>
-                        <a class="read_more" href="">Подробнее</a>
-                    </div>
-                </div>
-                <div class="little_block_news">
-                    <img class="photo2" src="img/news3.png">
-                    <div class="artical">
-                        <div class="category">
-                            top dress
-                        </div>
-                        <div class="date">
-                            август 3, 2017
-                        </div>
-                        <h2 class="name_artical"> Корсетные и безкорсетные свадебные
-                            платья</h2>
-                        <a class="read_more" href="">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="border_newsletters">
-            <div class="newsletters">
-                <h1>Подпишитесь на наши новости</h1>
+        <div class="basket inline">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="mob-menu">
+        <div class="menu-items">
+            <div class=" mob-search">
                 <div>
-                    <input type="email" class="email_newsletters" placeholder="Введите email, чтобы подписаться"><input
-                        type="button" class="button_newsletters">
+                    <input type="text" class=" mob-input-search" placeholder="поиск">
+                    <button class="mob-button-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </div>
-
-        </section>
-
-        <section class="dress_kaya_nova clearfix">
-            <div class="photo left clearfix">
-                <div class="vertical">
-                    <img class="wow flip" data-wow-duration="2s" data-wow-delay="0.2s" src="img/dressKN.png">
-                    <img class="wow flip" data-wow-duration="2s" data-wow-delay="0.6s" src="img/dressKN2.png">
+            <div class=" mob-nav">
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#">свадебныэ платья</a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#">вечерние платья</a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#">детские платья </a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#"> в наличии </a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#">пернерам </a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#"> медиа </a>
+                <a class="menu-item  wedding-dress-nav whith-sub-item" href="#">контакы</a>
+            </div>
+            <div class="mob-entry-and-lang">
+                <div class="mob-entry">
+                    <a href="#"><i class="fa fa-user-o padding-right" aria-hidden="true"></i>Войти</a>
                 </div>
-                <div class="vertical2"><img class="wow flip" data-wow-duration="2s" data-wow-delay="0.4s"
-                                            src="img/dressKN1.png">
-                    <img class="wow flip" data-wow-duration="2s" data-wow-delay="0.8s" src="img/dressKN3.png">
+                <div class="mob-lang ">
+                    <img src="img/uk.png" class="padding-right">Ukrain
                 </div>
             </div>
-            <div class="info right">
-                <div class="logotype">
-                    <img src="img/logo.png">
+        </div>
+        <div class="block-mob-entry">
+
+            <div class="title">
+                Вход <i class="fa mob-entry fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="mob-block-center">
+                <input type="text">
+                <input type="password">
+                <div class="link-in-the-input"><a href="#">Забили пароль?</a> <a href="#">Ещё нет учетной записи?</a>
                 </div>
-                <h1 class="hash_tag">#DressKayaNova</h1>
-                <div class="sub_title">Взгляните на всех прекрасных невест которые выбрали наши платья</div>
-                <a href="#" class="button">посмотреть все фото</a>
-
+                <button>Войдите<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
             </div>
-        </section>
-
-        <section class="representatives clearfix">
-
-            <div class="info">
-                <h1>Бренд Kaya Nova представлен во всем мире</h1>
-                <div class="description">All dresses are developed by our designers. They research the trends of wedding
-                    fashion and put their creative solutions and professional
-                </div>
-                <a href="#" class="button">подробнее</a>
+        </div>
+        <div class="change-language">
+            <div class="title">
+                Сменить язык <i class="fa mob-lang fa-times" aria-hidden="true"></i>
             </div>
-            <div class=" wow  animated zoomIn right image_mapa_world">
-                <img src="img/map_world.png">
+            <div class="lang uk">
+                <img src="img/uk.png" class="padding-right"> ukraina
             </div>
-        </section>
+            <div class="lang ro">
+                <img src="img/ro.png" class="padding-right"> romania
+            </div>
+            <div class="lang ru">
+                <img src="img/ru.png" class="padding-right"> russia
+            </div>
+            <div class="lang en">
+                <img src="img/en.png" class="padding-right"> english
+            </div>
+
+        </div>
+
 
     </div>
 
-    <section class="pop_up persona_office_block">
-        <div class="block_of_input">
-
-            <div class="output"></div>
-            <div class="sub_title">
-                Заходите в
-            </div>
-            <h1>личный кабинет</h1>
-            <input type="email" class="input_email" placeholder="електрона пошта">
-            <input type="password" class="input_password" placeholder="пароль">
-            <input type="button" class="input_persona_office" value="войти">
-            <a href="" class="see_prise">Хотите видеть цены на сайте?</a>
-            <a href="" class="registration">ЗАРЕГИСТРИРУЙТЕСЬ</a>
+</header>
+<div class="content ">
+    <div class="block-center menu  on-the-tab-hide on-the-mobile-hide">
+        <div class="logo">
+            <img src="img/logo.png">
         </div>
-    </section>
+
+        <div class="nav">
+            <div class="content-nav">
+                <a class="menu-item  wedding-dress-nav " href="#">свадебные платья </a>
+                <div class="hidden wedding-dress-show wedding-dress-nav wedding-dress-sub-nav">
+                    <div class=" whith-sub-item sub-item ">
+                        <div class="nav-sub-item ">
+                            <a href="">свадебные платья 2014</a>
+                            <a href="">свадебные платья 2015</a>
+                            <a href="">свадебные платья 2016</a>
+                            <a href="">свадебные платья 2017</a>
+                        </div>
+                        <img class="img-sub-item" src="img/sub-item.png">
+                    </div>
+                </div>
+            </div>
+            <div class="content-nav">
+                <a class="menu-item  evening-dress-nav " href="#">вечерние платья</a>
+                <div class="hidden evening-dress-sub-nav">
+                    <div class=" whith-sub-item sub-item ">
+                        <div class="nav-sub-item ">
+                            <a href="">свадебные платья 2014</a>
+                            <a href="">свадебные платья 2015</a>
+                            <a href="">свадебные платья 2016</a>
+                            <a href="">свадебные платья 2017</a>
+                        </div>
+                        <img class="img-sub-item" src="img/sub-item.png">
+                    </div>
+                </div>
+            </div>
+            <div class="content-nav">
+                <a class="menu-item  children-dress-nav " href="#">детские платья</a>
+
+                <div class="hidden children-dress-sub-nav">
+                    <div class=" whith-sub-item sub-item ">
+                        <div class="nav-sub-item ">
+                            <a href="">свадебные платья 2014</a>
+                            <a href="">свадебные платья 2015</a>
+                            <a href="">свадебные платья 2016</a>
+                            <a href="">свадебные платья 2017</a>
+                        </div>
+                        <img class="img-sub-item" src="img/sub-item.png">
+                    </div>
+                </div>
+            </div>
+            <a href="#">в наличии</a>
+            <a href="#">партноре </a>
+            <a href="#">медыа</a>
+            <a href="#">контакти</a>
+        </div>
+
+    </div>
+    <div class="slider">
+        <div class="slid"><img src="img/slide.png">
+            <div class="block-sild">
+                <h2>НОВАЯ<br> KОЛЛЕКЦИЯ 2017</h2>
+                <div class="text-slid">evening Dresses</div>
+                <button>посмотрить колекцыю</button>
+            </div>
+        </div>
+        <div class="slid"><img src="img/slide.png">
+            <div class="block-sild">
+                <h2>НОВАЯ<br> KОЛЛЕКЦИЯ 2017</h2>
+                <div class="text-slid">evening Dresses</div>
+                <button>посмотрить колекцыю</button>
+            </div>
+        </div>
+    </div>
+    <div class="block-center">
+        <div class="dress">
+            <div class="wedding-dresses in-full-screen">
+                <img src="img/wedding-dresses.png">
+                <h2>Свадебные платья</h2>
+                <p>Одно из наиважнейших нарядов в жизни девушки. Каждая модель в нашем каталоге - это сбывшаяся в
+                    будущем мечта невесты, воплощенная в нежном силуэте и тонких тканях.</p>
+                <button class="watch-the-catalog">
+                    смотреть каталог
+                </button>
+            </div>
+            <div class="evening-and-children">
+                <div class="evening in-full-screen">
+                    <img src="img/evening.png">
+                    <h2>Bечерние платья </h2>
+                    <p>Наша линия вечерних платьев – роскошных, женственных, изящных. Для прекрасных девушек и уверенных
+                        в себе женщин.</p>
+                    <button class="watch-the-catalog">
+                        смотреть каталог
+                    </button>
+                </div>
+                <div class="children in-full-screen">
+                    <img src="img/children.png">
+                    <h2>
+                        Детские платья
+                    </h2>
+                    <p>
+                        Маленьким модницам компания Licor тоже подготовила много праздничных нарядных платьев!
+                    </p>
+                    <button class="watch-the-catalog">
+                        смотреть каталог
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="dress-in-face">
+            <img src="img/dress_in_face1.png">
+            <div class="text">
+                <h3>В наличии</h3>
+                <h2>Свадебные Платья </h2>
+                <p>Одно из наиважнейших нарядов в жизни девушки. Каждая модель в нашем каталоге - это сбывшаяся в
+                    будущем мечта невесты, воплощенная в нежном силуэте и тонких тканях.</p>
+                <div class="see_more">
+                    смотреть еще
+                </div>
+            </div>
+            <img class="on-the-mobile-hide" src="img/dress_in_face2.png">
+
+        </div>
 
 
-</main>
+        <div class="info_licor">
+            <h3 class="title">
+                Оптовая швейная фабрика Licor Company
+            </h3>
+            <p>
+                Компания-производитель "Licor" работает более 15 лет на свадебном рынке и завоевала хорошую репутацию и
+                доверие в странах СНГ, Европе и Азии, благодаря великолепному качеству, изысканности моделей и
+                приемлемым ценам! Наши дизайнеры и конструкторы создают изысканные и неповторимые модели, используя
+                современные ткани и методы, позволяя нашим партнерам купить свадебные платья оптом по цене производителя
+                Украина. Мы предлагаем Вам купить свадебные платья оптом, устанавливая выгодную Вам стоимость и
+                гарантируя безупречное качество нашего товара. На нашем сайте вы также можете купить вечерние платья
+                оптом от производителя. Среди всего представленного разнообразия моделей каждая девушка сможет выбрать
+                именно такое платье, в котором она будет чувствовать себя безупречно. Так же представляем вашему
+                вниманию детские праздничные наряды для маленьких модниц! Пусть ваш праздник украсят принцессы одетые в
+                сказочно-красивых платьях!
+                Продукция TM Liсor уже много лет поставляет свои свадебные платья оптом в Россию, Пол ьшу, Белоруссию,
+                Румынию, Болгарию, Казахстан и другие страны.
+                Так как наша Компания имеет огромное количество партнеров по бизнесу в разных частях Украины и за ее
+                границами, но при этом мы всегда готовы к новому партнерству.
+                Желая угодить каждому клиенту мы создаем максимально разнообразные коллекции, делая выбор платьев
+                широким не только в плане используемых стилей и фасонов, но и в стоимости каждой модели.
+                Если Вы желаете обеспечить свой свадебный салон или магазин постоянным наличием качественного товара,
+                максимально современного и разнообразного, тогда Вы обратились по адресу! Приятного сотрудничества!!!
+            </p>
+            <div class="read-all">
+                читати все
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
-    <div class="wrap">
-        <div class="block_footer_category contact_information">
-            <div class="logotype">
-                <img src="img/logo.png">
+    <nav class="footer-nav">
+        <div class="block-center">
+            <div class="logo inline on-the-mobile-hide">
+                <img src="img/logo_footer.png">
+                <p>Производитель "Licor" работает<br>
+                    более 15 лет на свадебном рынке.
+                </p>
             </div>
-            <ul>
-                <li>Krakow, str. marszalka jozefa</li>
-                <li>pilsudskiego 40/1, krako</li>
-                <li><a href="">Email: info@kayawedding.com</a></li>
-                <li><a href="">Phone: +4 812-396-6481</a></li>
-                <li><a href="">Phone: +380 68 300-77-77</a></li>
-            </ul>
-        </div>
-        <div class="block_footer_category collection">
-            <h3>Коллекции</h3>
-            <ul>
-                <li><a href="">Prague</a></li>
-                <li><a href="">True love</a></li>
-                <li><a href="">Delight</a></li>
-                <li><a href="">Be adorable</a></li>
-                <li><a href="">Inspiration</a></li>
-                <li><a href="">Touch the dream</a></li>
-            </ul>
-
-
-        </div>
-        <div class="block_footer_category info_about_us">
-            <h3>Информация</h3>
-            <ul>
-                <li><a href="">Історія</a></li>
-                <li><a href="">Про дизайнера</a></li>
-                <li><a href="">Фото виробництва</a></li>
-                <li><a href="">Сотрудничество</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="block_footer_category social_networks clearfix">
-            <h3>Підписатися на наши новини </h3>
-            <div class="input_newsletters clearfix ">
-                <input type="email" class="newsletters" placeholder="ведіть email">
-                <input type="button" class="button_newsletters" value="ok">
+            <div class="categories on-the-mobile-hide">
+                <h4 class="title">категории</h4>
+                <a>свадебные платья </a>
+                <a>вечерние платья</a>
+                <a>детские платья</a>
+                <a>в наличии</a>
             </div>
-           <div>
-            <a href=""><img
-                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDk2LjEyNCA5Ni4xMjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDk2LjEyNCA5Ni4xMjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNzIuMDg5LDAuMDJMNTkuNjI0LDBDNDUuNjIsMCwzNi41Nyw5LjI4NSwzNi41NywyMy42NTZ2MTAuOTA3SDI0LjAzN2MtMS4wODMsMC0xLjk2LDAuODc4LTEuOTYsMS45NjF2MTUuODAzICAgYzAsMS4wODMsMC44NzgsMS45NiwxLjk2LDEuOTZoMTIuNTMzdjM5Ljg3NmMwLDEuMDgzLDAuODc3LDEuOTYsMS45NiwxLjk2aDE2LjM1MmMxLjA4MywwLDEuOTYtMC44NzgsMS45Ni0xLjk2VjU0LjI4N2gxNC42NTQgICBjMS4wODMsMCwxLjk2LTAuODc3LDEuOTYtMS45NmwwLjAwNi0xNS44MDNjMC0wLjUyLTAuMjA3LTEuMDE4LTAuNTc0LTEuMzg2Yy0wLjM2Ny0wLjM2OC0wLjg2Ny0wLjU3NS0xLjM4Ny0wLjU3NUg1Ni44NDJ2LTkuMjQ2ICAgYzAtNC40NDQsMS4wNTktNi43LDYuODQ4LTYuN2w4LjM5Ny0wLjAwM2MxLjA4MiwwLDEuOTU5LTAuODc4LDEuOTU5LTEuOTZWMS45OEM3NC4wNDYsMC44OTksNzMuMTcsMC4wMjIsNzIuMDg5LDAuMDJ6IiBmaWxsPSIjZDliODk5Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="/></a>
-            <a href=""><img
-                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4Ni4zOTIgNDg2LjM5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg2LjM5MiA0ODYuMzkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik00MzAuMTQ5LDEzNS4yNDhDNDE2Ljg2NSwzOS4xMjUsMzIxLjA3Ni05LjgxOCwyMTguODczLDEuNjQyICAgICBDMTM4LjA3MSwxMC43MDEsNTcuNTEyLDc2LjAzLDU0LjE2OCwxNjkuNDQ3Yy0yLjAzNyw1Ny4wMjksMTQuMTM2LDk5LjgwMSw2OC4zOTksMTExLjg0ICAgICBjMjMuNDk5LTQxLjU4Ni03LjU2OS01MC42NzYtMTIuNDMzLTgwLjgwMkM5MC4yMjIsNzcuMzY3LDI1Mi4xNi02LjcxOCwzMzYuOTc1LDc5LjMxM2M1OC43MzIsNTkuNTgzLDIwLjAzMywyNDIuNzctNzQuNTcsMjIzLjcxICAgICBjLTkwLjYyMS0xOC4xNzksNDQuMzgzLTE2NC4wMDUtMjcuOTM3LTE5Mi42MTFjLTU4Ljc5My0yMy4yODYtOTAuMDEzLDcxLjEzNS02Mi4xMzcsMTE4LjA3MiAgICAgYy0xNi4zNTUsODAuNzExLTUxLjU1NywxNTYuNzA5LTM3LjMsMjU3LjkwOWM0Ni4yMDctMzMuNTYxLDYxLjgwMi05Ny43MzQsNzQuNTctMTY0LjcwNCAgICAgYzIzLjIyNSwxNC4xMzYsMzUuNjU5LDI4Ljc1OCw2NS4yNjgsMzEuMDM4QzM4NC4wNjQsMzYxLjIwNyw0NDUuMTM2LDI0My43MTMsNDMwLjE0OSwxMzUuMjQ4eiIgZmlsbD0iI2Q5Yjg5OSIvPgoJCTwvZz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"/></a>
-            <a href=""><img
-                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMTAgMzEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMTAgMzEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnIGlkPSJYTUxJRF84MjJfIj4KCTxwYXRoIGlkPSJYTUxJRF84MjNfIiBkPSJNMjk3LjkxNyw2NC42NDVjLTExLjE5LTEzLjMwMi0zMS44NS0xOC43MjgtNzEuMzA2LTE4LjcyOEg4My4zODZjLTQwLjM1OSwwLTYxLjM2OSw1Ljc3Ni03Mi41MTcsMTkuOTM4ICAgQzAsNzkuNjYzLDAsMTAwLjAwOCwwLDEyOC4xNjZ2NTMuNjY5YzAsNTQuNTUxLDEyLjg5Niw4Mi4yNDgsODMuMzg2LDgyLjI0OGgxNDMuMjI2YzM0LjIxNiwwLDUzLjE3Ni00Ljc4OCw2NS40NDItMTYuNTI3ICAgQzMwNC42MzMsMjM1LjUxOCwzMTAsMjE1Ljg2MywzMTAsMTgxLjgzNXYtNTMuNjY5QzMxMCw5OC40NzEsMzA5LjE1OSw3OC4wMDYsMjk3LjkxNyw2NC42NDV6IE0xOTkuMDIxLDE2Mi40MWwtNjUuMDM4LDMzLjk5MSAgIGMtMS40NTQsMC43Ni0zLjA0NCwxLjEzNy00LjYzMiwxLjEzN2MtMS43OTgsMC0zLjU5Mi0wLjQ4NC01LjE4MS0xLjQ0NmMtMi45OTItMS44MTMtNC44MTktNS4wNTYtNC44MTktOC41NTR2LTY3Ljc2NCAgIGMwLTMuNDkyLDEuODIyLTYuNzMyLDQuODA4LTguNTQ2YzIuOTg3LTEuODE0LDYuNzAyLTEuOTM4LDkuODAxLTAuMzI4bDY1LjAzOCwzMy43NzJjMy4zMDksMS43MTgsNS4zODcsNS4xMzQsNS4zOTIsOC44NjEgICBDMjA0LjM5NCwxNTcuMjYzLDIwMi4zMjUsMTYwLjY4NCwxOTkuMDIxLDE2Mi40MXoiIGZpbGw9IiNkOWI4OTkiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"/></a>
-            <a href=""><img
-                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDk3LjM5NSA5Ny4zOTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDk3LjM5NSA5Ny4zOTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMTIuNTAxLDBoNzIuMzkzYzYuODc1LDAsMTIuNSw1LjA5LDEyLjUsMTIuNXY3Mi4zOTVjMCw3LjQxLTUuNjI1LDEyLjUtMTIuNSwxMi41SDEyLjUwMUM1LjYyNCw5Ny4zOTUsMCw5Mi4zMDUsMCw4NC44OTUgICBWMTIuNUMwLDUuMDksNS42MjQsMCwxMi41MDEsMEwxMi41MDEsMHogTTcwLjk0OCwxMC44MjFjLTIuNDEyLDAtNC4zODMsMS45NzItNC4zODMsNC4zODV2MTAuNDk1YzAsMi40MTIsMS45NzEsNC4zODUsNC4zODMsNC4zODUgICBoMTEuMDA4YzIuNDEyLDAsNC4zODUtMS45NzMsNC4zODUtNC4zODVWMTUuMjA2YzAtMi40MTMtMS45NzMtNC4zODUtNC4zODUtNC4zODVINzAuOTQ4TDcwLjk0OCwxMC44MjF6IE04Ni4zODcsNDEuMTg4aC04LjU3MiAgIGMwLjgxMSwyLjY0OCwxLjI1LDUuNDUzLDEuMjUsOC4zNTVjMCwxNi4yLTEzLjU1NiwyOS4zMzItMzAuMjc1LDI5LjMzMmMtMTYuNzE4LDAtMzAuMjcyLTEzLjEzMi0zMC4yNzItMjkuMzMyICAgYzAtMi45MDQsMC40MzgtNS43MDgsMS4yNS04LjM1NWgtOC45NDV2NDEuMTQxYzAsMi4xMjksMS43NDIsMy44NzIsMy44NzIsMy44NzJoNjcuODIyYzIuMTMsMCwzLjg3Mi0xLjc0MiwzLjg3Mi0zLjg3MlY0MS4xODggICBIODYuMzg3eiBNNDguNzg5LDI5LjUzM2MtMTAuODAyLDAtMTkuNTYsOC40ODUtMTkuNTYsMTguOTUzYzAsMTAuNDY4LDguNzU4LDE4Ljk1MywxOS41NiwxOC45NTMgICBjMTAuODAzLDAsMTkuNTYyLTguNDg1LDE5LjU2Mi0xOC45NTNDNjguMzUxLDM4LjAxOCw1OS41OTMsMjkuNTMzLDQ4Ljc4OSwyOS41MzN6IiBmaWxsPSIjZDliODk5Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="/></a>
-            <div>Copyright © 2017 Kaya Nova</div>
-            <div>Разработка сайта: Brilliant IT</div>
-           </div>
+            <div class="categories on-the-mobile-hide">
+                <h4 class="title">категории</h4>
+                <a>партноре </a>
+                <a>медыа</a>
+                <a>контакти</a>
+            </div>
+            <div class="newsletter">
+                <h4 class="title">Подписка на рассылку </h4>
+                <p>Подпишитесь и узнавайте первыми о: специальных
+                    <br>акциях; выходе нових колекций</p>
+                <input type="email" class="email-in-newsletters" placeholder="e-mail">
+                <button class="button-in-newsletters">подписатса</i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class=" footer">
+        <div class="block-center center ">
+            <div class="social-networks">
+                <a><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a><i class="fa fa-skype" aria-hidden="true"></i></a>
+                <a><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact-inform">
+                tel:<a class="tel" href="callto:+38050000000">+380509087042</a>,<a class="tel"
+                                                                                   href="callto:+380509076054">+380684345435345</a>-viber
+                skype:<a href="skype:skype">Tm-licor</a> Email:<a href="mailto:as@gmail.com">gmail.com</a>
+            </div>
+            <div class="info">
+                &copy; 2016 licor | <a href="#">карта сайта</a> |<a href="#"> Brilliant IT</a>
+            </div>
         </div>
     </div>
 </footer>
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
-
