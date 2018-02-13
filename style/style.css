@@ -16,11 +16,13 @@
 }
 body {
   font-family: 'Lato Regular', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 .wrap {
   width: 100%;
-  padding: 0 15%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1250px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -45,13 +47,12 @@ h1 {
   font-family: "PT Serif Regular";
 }
 .button {
-  font-family: 'Lato';
-  font-weight: 700;
+  padding: 15px 50px;
+  font-family: 'Lato Regular';
   border: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1em;
-  padding: 1em 2em;
   -webkit-box-shadow: inset 0 0 0 2px #c0a375;
   box-shadow: inset 0 0 0 2px #c0a375;
   color: black;
@@ -70,7 +71,7 @@ h1 {
   height: 100%;
 }
 .button {
-  padding: 10px 40px;
+  padding: 10px 30px;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
 }
@@ -133,23 +134,29 @@ button {
   cursor: pointer;
   font-family: "Open Sans";
 }
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
 h1 {
   font-family: 'PT Serif';
   font-size: 2em;
   font-weight: normal;
 }
 .logotype {
-  width: 10%;
-}
-.logotype {
+  display: block;
   text-align: center;
-  margin: 10px auto;
+  width: 40%;
+  margin: 0 auto;
 }
 .logotype img {
   display: table;
   margin: 0 auto;
 }
 .logotype div.name_site {
+  font-weight: bolder;
   font-size: 1.5em;
   color: #c0a375;
 }
@@ -157,16 +164,17 @@ header {
   border-bottom: 2px solid #ddddd9;
 }
 header .sub_nav {
+  font-family: "Lato Light";
   display: block;
-  font-size: 20px;
+  font-size: 0.8em;
   color: #c1bcad;
   vertical-align: middle;
   padding: 20px 0;
 }
 header .sub_nav a {
+  font-family: "Lato Light";
   color: #c1bcad;
   text-decoration: none;
-  font-family: "Lato ";
 }
 header .sub_nav .decor_language {
   border: 1px solid #c1bcad;
@@ -174,7 +182,6 @@ header .sub_nav .decor_language {
   box-shadow: 2px 2px 2px 0 #c1bcad ;
 }
 header .sub_nav .language {
-  font-family: "Lato Regular";
   cursor: pointer;
   padding: 0 20px;
   position: relative;
@@ -217,6 +224,7 @@ header .sub_nav .chosen_language:after {
 .search:after {
   content: "";
   position: absolute;
+  right: 0;
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -227,7 +235,7 @@ header .sub_nav .chosen_language:after {
   width: 100%;
   border-bottom: 2px solid;
   background: white;
-  height: 25px;
+  height: 24px;
   bottom: 0 !important;
 }
 header .sub_nav .personal_office {
@@ -257,7 +265,7 @@ header nav.main_menu li {
   font-weight: lighter;
   text-transform: uppercase;
   display: inline;
-  padding: 0 1%;
+  padding: 0 10px;
 }
 header nav.main_menu li.have_sub_menu:after {
   content: "";
@@ -273,12 +281,12 @@ header nav.main_menu li.have_sub_menu:after {
 main .block_see_collection {
   margin-bottom: 5%;
   width: 100%;
-  background: url(../img/sliderKaya.png) no-repeat;
+  background: url(../img/sliderKaya.png) no-repeat 50%;
   background-size: cover;
 }
 main .block_see_collection .info_for_collection {
-  padding: 10%;
-  width: 30%;
+  padding: 10% 0;
+  width: 40%;
 }
 main .block_see_collection .info_for_collection .sub_title {
   text-align: left;
@@ -288,7 +296,6 @@ main .block_see_collection .info_for_collection .description {
   font-size: 0.9em;
 }
 main .block_see_collection .info_for_collection .button {
-  padding: 15px 50px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 5% 0;
@@ -298,6 +305,7 @@ main .block_see_collection .info_for_collection .button:hover {
   text-decoration: underline;
 }
 main .block_collection {
+  margin-bottom: 50px;
   text-align: center;
 }
 main .block_collection .sub_title {
@@ -344,6 +352,9 @@ main .block_collection .photo_collections .collections .info_for_collection .see
   margin: 0 5px;
   border-top: 2px solid white;
   border-bottom: 3px solid transparent;
+}
+main .block_exlusive_dresses {
+  margin-bottom: 30px;
 }
 main .block_exlusive_dresses .left {
   position: relative;
@@ -402,6 +413,7 @@ main .exhibition {
   background: #faf8f2;
   width: 100%;
   padding: 30px 0;
+  margin-bottom: 30px;
 }
 main .exhibition .info {
   display: inline-block;
@@ -423,7 +435,6 @@ main .exhibition .info .description {
   margin: 20px 0;
 }
 main .exhibition .info .button {
-  padding: 2% 5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 5% 0;
@@ -478,8 +489,13 @@ main .exhibition .photo img {
   font-size: 0.8em;
 }
 .news .artical .category:after {
-  font-size: 0.7em;
-  content: "•";
+  margin: 2px;
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c0a375;
 }
 .news .artical .date {
   display: inline-block;
@@ -488,7 +504,7 @@ main .exhibition .photo img {
 }
 .news .artical .name_artical {
   margin: 20px 0;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .news .artical .text_artical {
   font-size: 0.8em;
@@ -515,7 +531,7 @@ main .exhibition .photo img {
   box-sizing: border-box;
 }
 .news .two_littel_block .little_block_news {
-  padding: 15px;
+  padding: 15px 0;
 }
 .news .two_littel_block .little_block_news img {
   width: 50%;
@@ -526,7 +542,7 @@ main .exhibition .photo img {
   float: right;
 }
 main .border_newsletters {
-  margin: 20px 0;
+  margin: 20px 0 50px;
   background: url("../img/fonForNewsletters.png");
   padding: 7px;
 }
@@ -551,6 +567,7 @@ main .border_newsletters .newsletters > div .email_newsletters {
   float: left;
   border: none;
   width: 100%;
+  margin: 5px;
   padding-right: 20%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -560,6 +577,7 @@ main .border_newsletters .newsletters > div .button_newsletters {
   position: absolute;
   right: 0;
   bottom: 0;
+  margin: 5px;
   border: none;
   width: 15px;
   height: 15px;
@@ -610,9 +628,6 @@ main .border_newsletters .newsletters > div .button_newsletters {
   font-size: 1.5em;
   margin-bottom: 20px;
 }
-.dress_kaya_nova .info .button {
-  padding: 5px 10px;
-}
 main .representatives {
   padding: 15% 0;
 }
@@ -636,7 +651,6 @@ main .representatives .info .description {
   margin-bottom: 20px;
 }
 main .representatives .info .button {
-  padding: 2% 5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 5% 0;
@@ -661,11 +675,19 @@ main .representatives .image_mapa_world img {
   left: 0;
 }
 .pop_up .block_of_input {
-  width: 800px;
-  height: 500px;
-  background: url("../img/personal_office.png") no-repeat 50%;
-  margin: 5% auto;
+  width: 96%;
+  height: 98%;
+  max-width: 800px;
+  max-height: 500px;
+  background: url(../img/personal_office.png) top left;
+  margin: auto;
+  background-size: cover;
   text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 .pop_up .block_of_input .output {
   width: 20px;
@@ -708,7 +730,6 @@ main .representatives .image_mapa_world img {
 .pop_up .block_of_input a {
   text-align: center;
   display: block;
-  margin-right: 60px;
   color: black;
 }
 .pop_up .block_of_input .see_prise {
@@ -723,6 +744,11 @@ footer {
   font-family: "Lato light";
   background: #faf8f2;
   font-size: 0.7em;
+  padding: 20px 0;
+}
+footer h3 {
+  margin: 10px 0;
+  font-weight: 900;
 }
 footer .contact_information,
 footer .social_networks {
@@ -744,16 +770,46 @@ footer .info_about_us {
   box-sizing: border-box;
   font-size: 1em;
 }
+footer ul li {
+  margin: 5px 0;
+}
 footer .block_footer_category a {
   color: black;
   text-decoration: none;
 }
-footer .logotype img {
+footer .logotype {
+  text-align: left;
   width: 50%;
+  margin: 0;
+}
+footer .social_networks .input_newsletters {
+  border: 1px solid #e7e4db;
+  height: 30px;
+  width: 80%;
+  margin: 10px 20%;
+}
+footer .input_newsletters input {
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: #c2c2b0 ;
+}
+footer .input_newsletters .newsletters {
+  width: 65%;
+}
+footer .input_newsletters .button_newsletters {
+  width: 30%;
+  height: 85%;
+  border-left: 2px solid #c2c2b0 ;
+}
+footer .logotype img {
   margin: 0;
 }
 footer .social_networks {
   text-align: right;
+}
+footer .social_networks div {
+  margin: 10px 0;
 }
 @media (max-width: 1300px) {
   main .block_see_collection {
