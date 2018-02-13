@@ -22,13 +22,14 @@ jQuery(document).ready(function(){
         jQuery('.selector_language').toggle();
 
     });
-    console.log(find(jQuery('.decor_search')));
+
     jQuery('.search').click(function () {
 
         jQuery('.search').toggleClass("decor_search");
         jQuery('.input_search').toggle();
 
     });
+
     jQuery('.output').click(function () {
 
         jQuery('.persona_office_block').toggle();
