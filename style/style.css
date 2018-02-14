@@ -145,15 +145,16 @@ input:focus {
   font-size: 2em;
   font-weight: normal;
 }
-.logotype {
+header .logotype {
   display: block;
   text-align: center;
   width: 40%;
   margin: 0 auto;
 }
-.logotype img {
+header .logotype img {
   display: table;
   margin: 0 auto;
+  width: 20%;
 }
 .logotype div.name_site {
   font-weight: bolder;
@@ -809,6 +810,7 @@ footer .input_newsletters .button_newsletters {
   border-left: 2px solid #c2c2b0;
 }
 footer .logotype img {
+  width: 70%;
   margin: 0;
 }
 footer .social_networks {
