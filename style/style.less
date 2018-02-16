@@ -171,6 +171,7 @@ a,
 button {
   cursor: pointer;
   font-family: "Open Sans";
+  text-decoration: none;
 }
 
 input:active,
@@ -184,6 +185,7 @@ input:focus {
   font-family: 'PT Serif';
   font-size: 2em;
   font-weight: normal;
+  text-align: center;
 }
 
 header {
@@ -233,10 +235,14 @@ header .sub_nav .decor_language {
 }
 
 header .sub_nav .language {
+  margin-top: -10px;
   cursor: pointer;
-  padding: 0 20px;
+  padding: 10px 20px;
   position: relative;
   display: inline-block;
+}
+header .sub_nav .language .lang {
+  padding: 5px 0;
 }
 
 header .sub_nav .language .selector_language {
@@ -347,6 +353,9 @@ main .block_see_collection {
   width: 100%;
   background: url(../img/sliderKaya.png) no-repeat 50%;
   background-size: cover;
+}
+main section.slider .name_collection{
+  text-align: left;
 }
 
 main .block_see_collection .info_for_collection {
@@ -1012,6 +1021,9 @@ footer .social_networks span {
     font-size: 14px;
     position: relative;
   }
+  .wrap{
+    padding: 0;
+  }
 
   header {
     height: 80px;
@@ -1039,7 +1051,7 @@ footer .social_networks span {
   }
 
   .show_menu img, .basket_mob img {
-    width: 100%;
+    width: 75%;
     padding: 10px;
   }
 
@@ -1375,3 +1387,41 @@ footer .social_networks span {
     font-weight: bold;
   }
 }
+
+/*category.html*/
+.filter_collection{
+ display: table;
+  margin: 0 auto;
+}
+.type_dress{
+ display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.type_dress img{
+ height: 50px;
+}
+ .active img{
+  filter:contrast(58%);
+}
+.filter_collection{
+  margin: 0 -10px;
+}
+
+.goods .good{
+  float: left;
+  width: 33.333%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.goods img{
+  width: 100%;
+}
+
+.goods .name_dress ,.goods .prise{
+  text-align: center;
+  padding: 10px ;
+}
+
+

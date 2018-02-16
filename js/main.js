@@ -35,16 +35,39 @@ jQuery(document).ready(function () {
         jQuery('.mobil_language').removeClass("active");
         jQuery('.mobil_category').removeClass("active");
     });
-
     jQuery('.selector_language .lang').click(function () {
-        jQuery('.language').toggleClass("decor_language");
+
+        jQuery('.selector_language').appendTo(jQuery('.language'));
+        jQuery('.mobil_language').removeClass("active");
         var chosen_language = jQuery('.chosen_language');
         var lang = chosen_language.html();
         chosen_language.html(jQuery(this).html());
         jQuery(this).html(lang);
-        jQuery('.sub_nav .selector_language').toggle();
+    });
+    jQuery('.mobil_language .selector_language .lang').click(function () {
         jQuery('.selector_language').appendTo(jQuery('.language'));
-        jQuery('.mobil_language').removeClass("active")
+        jQuery('.mobil_language').removeClass("active");
+    });
+
+    jQuery('.selector_language .lang').click(function () {
+
+        jQuery('.selector_language').appendTo(jQuery('.language'));
+        jQuery('.mobil_language').removeClass("active");
+        var chosen_language = jQuery('.chosen_language');
+        var lang = chosen_language.html();
+        chosen_language.html(jQuery(this).html());
+        jQuery(this).html(lang);
+    });
+    jQuery('.sub_nav .selector_language .lang').click(function () {
+        var chosen_language = jQuery('.chosen_language');
+        var lang = chosen_language.html();
+        chosen_language.html(jQuery(this).html());
+        jQuery(this).html(lang);
+    });
+
+    jQuery('.language .selector_language .lang').click(function () {
+        jQuery('.language').toggleClass("decor_language");
+        jQuery('.sub_nav .selector_language').toggle();
     });
 
 
