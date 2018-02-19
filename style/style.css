@@ -1248,8 +1248,18 @@ footer .social_networks span {
   -webkit-filter: contrast(58%);
           filter: contrast(58%);
 }
-.filter_collection {
-  margin: 0 -10px;
+.show_more_goods {
+  border: none;
+  font-family: 'Lato Regular', sans-serif;
+  color: #7b7460;
+  -webkit-box-shadow: 0 0 10px 5px #bab8bc;
+          box-shadow: 0 0 10px 5px #bab8bc;
+  background: white;
+  display: table;
+  margin: 50px auto;
+  height: 50px;
+  width: 30%;
+  max-width: 200px;
 }
 .goods .good {
   float: left;
