@@ -91,11 +91,25 @@ jQuery(document).ready(function () {
         jQuery('.language').toggleClass("decor_language");
         jQuery('.selector_language').toggle();
     });
+   /* var img_height_1 = jQuery('.exhibition_img_1 img').height();
+    var img_height_2 = jQuery('.exhibition_img_2 img').height();
 
+    jQuery('.exhibition_img').height(img_height_1 > img_height_2 ? img_height_2 : img_height_1);
+*/
+    photo_resize ()
 });
 
 jQuery(window).resize(function () {
-    var img_height_1 = jQuery('.exhibition_img_1 img').height();
-    var img_height_2 = jQuery('.exhibition_img_2 img').height();
-    jQuery('.exhibition_img').height(img_height_1 > img_height_2 ? img_height_2 : img_height_1);
+    photo_resize ()
 });
+
+
+function photo_resize (){
+    var arr = jQuery('.exhibition_img img');
+    var height = [];
+    arr.each(function (ix,el) {
+        height[ix]=jQuery(el).height();
+    });
+    var min_of_array = Math.min.apply(Math, height);
+    jQuery('.exhibition_img').height(min_of_array);
+}
