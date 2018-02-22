@@ -1423,8 +1423,8 @@ footer .social_networks span {
   z-index: 10;
   background-color: #000000;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease 0.3s;
-  transition: opacity 0.3s ease 0.3s;
+  -webkit-transition: opacity 0.3s ease ;
+  transition: opacity 0.3s ease ;
 }
 .goods .good .block img {
   display: table;
@@ -1441,8 +1441,8 @@ footer .social_networks span {
   bottom: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease 0.4s;
-  transition: opacity 0.4s ease 0.4s;
+  -webkit-transition: opacity 0.4s ease ;
+  transition: opacity 0.4s ease ;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1454,4 +1454,5 @@ footer .social_networks span {
   color: white;
   font-family: "Lato light";
   text-transform: uppercase;
+  font-weight: 600;
 }
