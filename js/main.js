@@ -71,6 +71,7 @@ jQuery(document).ready(function () {
     });
 
 
+
     jQuery('.search').click(function () {
         jQuery('.search').toggleClass("decor_search");
         jQuery('.input_search').toggle();
@@ -86,16 +87,39 @@ jQuery(document).ready(function () {
         jQuery('.persona_office_block').toggle();
     });
 
+    function toggle_select(toggle, toggleclass) {
+        jQuery(toggle).toggle();
+        jQuery(toggleclass).toggleClass('decor_select');
+
+    }
+    jQuery('.chosen_prise').on('click', function () {
+        toggle_select('.selector_prise', '.select .prise');
+        jQuery('.chosen_prise .chosen').html('по ценах');
+    });
+
+    jQuery('.selector_prise .item').on('click', function () {
+        toggle_select('.selector_prise', '.select .prise');
+        jQuery('.chosen_prise .chosen').html(jQuery(this).html());
+    });
+    jQuery('.chosen_silhouette').on('click', function () {
+        toggle_select('.selector_silhouette', '.silhouette');
+        jQuery('.chosen_silhouette  .chosen').html('по силуэту');
+    });
+
+    jQuery('.selector_silhouette .item').on('click', function () {
+        toggle_select('.selector_silhouette', '.silhouette');
+        jQuery('.chosen_silhouette .chosen').html(jQuery(this).html());
+
+    });
+
+
+
+
 
     jQuery('.sub_nav .chosen_language').click(function () {
         jQuery('.language').toggleClass("decor_language");
         jQuery('.selector_language').toggle();
     });
-   /* var img_height_1 = jQuery('.exhibition_img_1 img').height();
-    var img_height_2 = jQuery('.exhibition_img_2 img').height();
-
-    jQuery('.exhibition_img').height(img_height_1 > img_height_2 ? img_height_2 : img_height_1);
-*/
     photo_resize ()
 });
 
