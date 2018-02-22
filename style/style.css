@@ -1336,6 +1336,7 @@ footer .social_networks span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 160px;
+  z-index: 15;
 }
 .icon {
   font-size: 1.3em;
