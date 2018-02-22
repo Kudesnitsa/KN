@@ -602,7 +602,7 @@ main .border_newsletters .newsletters > div {
   padding: 20px 10px 0 10px;
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .newsletters > div .email_newsletters {
   float: left;
@@ -960,7 +960,7 @@ footer .social_networks span {
     text-align: center;
     padding: 10px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background: white;
     width: 100%;
     border: none;
@@ -989,7 +989,7 @@ footer .social_networks span {
   .mobil_language {
     will-change: transform;
     -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -998,7 +998,7 @@ footer .social_networks span {
   }
   .active {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   .basket_mob {
     display: inline-block;
@@ -1087,7 +1087,7 @@ footer .social_networks span {
     width: 100%;
     padding: 20px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     color: #ccb48e;
     font-size: 1.5em;
   }
@@ -1334,7 +1334,7 @@ footer .social_networks span {
   padding: 15px;
   margin-top: -15px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 160px;
   z-index: 15;
 }
@@ -1370,7 +1370,7 @@ footer .social_networks span {
 }
 .decor_select {
   -webkit-box-shadow: 3px 3px 9px rgba(123, 126, 122, 0.43);
-          box-shadow: 3px 3px 9px rgba(123, 126, 122, 0.43);
+  box-shadow: 3px 3px 9px rgba(123, 126, 122, 0.43);
 }
 .decor_select .chosen_prise,
 .decor_select .chosen_silhouette {
@@ -1385,6 +1385,7 @@ footer .social_networks span {
 .name_dress {
   font-family: "PT Serif";
   font-size: 1.4em;
+  text-transform: uppercase;
 }
 .goods {
   margin: -10px -30px;
@@ -1394,12 +1395,13 @@ footer .social_networks span {
   width: 33.333%;
   padding: 30px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .goods .good .prise {
   font-family: "Lato light";
   font-size: 1.1em;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 .goods .good .block {
   z-index: 10;
@@ -1445,7 +1447,7 @@ footer .social_networks span {
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .goods .good .block .button_see_good {
   border: none;
