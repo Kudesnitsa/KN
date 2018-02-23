@@ -94,7 +94,7 @@ jQuery(document).ready(function () {
     }
     jQuery('.chosen_prise').on('click', function () {
         toggle_select('.selector_prise', '.select .prise');
-        jQuery('.chosen_prise .chosen').html('по ценах');
+        jQuery('.chosen_prise .chosen').html('<u>по ценах</u>');
     });
 
     jQuery('.selector_prise .item').on('click', function () {
@@ -103,7 +103,7 @@ jQuery(document).ready(function () {
     });
     jQuery('.chosen_silhouette').on('click', function () {
         toggle_select('.selector_silhouette', '.silhouette');
-        jQuery('.chosen_silhouette  .chosen').html('по силуэту');
+        jQuery('.chosen_silhouette  .chosen').html('<u>по силуэту</u>');
     });
 
     jQuery('.selector_silhouette .item').on('click', function () {
@@ -111,16 +111,21 @@ jQuery(document).ready(function () {
         jQuery('.chosen_silhouette .chosen').html(jQuery(this).html());
 
     });
-
-
-
-
-
     jQuery('.sub_nav .chosen_language').click(function () {
         jQuery('.language').toggleClass("decor_language");
         jQuery('.selector_language').toggle();
     });
-    photo_resize ()
+    jQuery('.see_more_category').on('click', function () {
+        jQuery('.description').toggleClass('small_text');
+
+
+    });
+    jQuery('.sort_prise').on('click', function () {
+        jQuery('path').toggleClass("active");
+
+
+    });
+    photo_resize ();
 });
 
 jQuery(window).resize(function () {
