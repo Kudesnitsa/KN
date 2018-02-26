@@ -892,6 +892,7 @@ footer .input_newsletters .newsletters {
   width: 75%;
 }
 footer .input_newsletters .button_newsletters {
+  cursor: pointer;
   color: black;
   width: 20%;
   height: 85%;
@@ -1135,6 +1136,7 @@ select .chosen::first-letter {
   box-sizing: border-box;
 }
 .good .button_see_good {
+  cursor: pointer;
   background: rgba(192, 163, 117, 0.3);
   border: 1px solid  #c0a375;
   height: 60px;
@@ -1144,6 +1146,11 @@ select .chosen::first-letter {
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+.good .button_see_good:hover {
+  background: rgba(192, 163, 117, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .wrap_category .description {
   font-family: "Lato light";
@@ -1530,6 +1537,30 @@ select .chosen::first-letter {
   }
   .goods .good {
     width: 100%;
+  }
+  .sort {
+    width: 50%;
+    float: left;
+  }
+  .sort_prise {
+    display: block;
+    padding: 15px 0 0;
+  }
+  .select {
+    width: 50%;
+    float: right;
+  }
+  .select .label {
+    position: static;
+  }
+  .select .prise {
+    top: 30px;
+    width: 130px;
+    left: -15px;
+  }
+  .select .silhouette {
+    top: 30px;
+    width: 130px;
   }
 }
 @media (min-width: 768px) and (max-width: 768px) {
