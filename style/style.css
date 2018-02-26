@@ -941,7 +941,7 @@ footer .social_networks span {
   margin-top: -15px;
 }
 .bread_crumbs {
-  margin: 10px 0;
+  margin: 30px 0;
   width: 30%;
   display: inline-block;
 }
@@ -1074,7 +1074,7 @@ select .chosen::first-letter {
   padding: 15px 0;
 }
 .goods {
-  margin: -20px -30px;
+  margin: -10px -30px;
 }
 .goods .good {
   float: left;
@@ -1138,7 +1138,7 @@ select .chosen::first-letter {
 .good .button_see_good {
   cursor: pointer;
   background: rgba(192, 163, 117, 0.3);
-  border: 1px solid  #c0a375;
+  border: 1px solid #c0a375;
   height: 60px;
   width: 100%;
   color: white;
@@ -1204,7 +1204,40 @@ select .chosen::first-letter {
     display: none;
   }
 }
+@media (min-width: 769px) and (max-width: 1023px) {
+  .goods .good {
+    width: 50%;
+    float: left;
+  }
+  .sort {
+    width: 50%;
+    float: left;
+  }
+  .sort_prise {
+    display: block;
+    padding: 15px 0 0;
+  }
+  .select {
+    width: 50%;
+    float: right;
+  }
+  .select .label {
+    position: static;
+  }
+  .select .prise {
+    top: 30px;
+    width: 130px;
+    left: -15px;
+  }
+  .select .silhouette {
+    top: 30px;
+    width: 130px;
+  }
+}
 @media (max-width: 768px) {
+  .wrap_category .description {
+    padding: 0 5%;
+  }
   .representatives .title_h1 {
     width: 100%;
   }
@@ -1563,8 +1596,18 @@ select .chosen::first-letter {
     width: 130px;
   }
 }
-@media (min-width: 768px) and (max-width: 768px) {
-  .goods .good {
-    width: 50%;
+@media (max-width: 530px) {
+  .sort_prise {
+    padding: 40px 0 0;
+  }
+  .select .prise {
+    top: 30px;
+    width: 130px;
+    left: -15px;
+  }
+  .select .silhouette {
+    top: 70px;
+    left: -15px;
+    width: 130px;
   }
 }

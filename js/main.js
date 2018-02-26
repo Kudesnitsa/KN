@@ -1,4 +1,13 @@
 jQuery(document).ready(function () {
+    jQuery('.slider').slick({
+        arrows: true,
+        infinite: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+
     jQuery('.show_menu').click(function () {
         jQuery('.black_fond').toggle();
         jQuery('.mobil_menu').toggleClass("active");
@@ -71,7 +80,6 @@ jQuery(document).ready(function () {
     });
 
 
-
     jQuery('.search').click(function () {
         jQuery('.search').toggleClass("decor_search");
         jQuery('.input_search').toggle();
@@ -92,6 +100,7 @@ jQuery(document).ready(function () {
         jQuery(toggleclass).toggleClass('decor_select');
 
     }
+
     jQuery('.chosen_prise').on('click', function () {
         toggle_select('.selector_prise', '.select .prise');
         jQuery('.chosen_prise .chosen').html('<u>по ценах</u>');
@@ -125,19 +134,19 @@ jQuery(document).ready(function () {
 
 
     });
-    photo_resize ();
+    photo_resize();
 });
 
 jQuery(window).resize(function () {
-    photo_resize ()
+    photo_resize()
 });
 
 
-function photo_resize (){
+function photo_resize() {
     var arr = jQuery('.exhibition_img img');
     var height = [];
-    arr.each(function (ix,el) {
-        height[ix]=jQuery(el).height();
+    arr.each(function (ix, el) {
+        height[ix] = jQuery(el).height();
     });
     var min_of_array = Math.min.apply(Math, height);
     jQuery('.exhibition_img').height(min_of_array);
