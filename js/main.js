@@ -1,7 +1,8 @@
 jQuery(document).ready(function () {
     jQuery('.slider').slick({
-        arrows: true,
         infinite: true,
+        prevArrow: "<button type='button' class='prev'></button>",
+        nextArrow:" <button type='button' class='next'></button>",
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1

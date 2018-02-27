@@ -6,7 +6,7 @@
 }
 
 .left_arrow {
-  content: "";
+  margin-right: 20px;
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -18,7 +18,7 @@
 }
 
 .right_arrow {
-  content: "";
+
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -28,7 +28,50 @@
   background-repeat: no-repeat;
 
 }
-
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: black;
+  z-index: 20;
+  background: white;
+  opacity: 0.5;
+  border: none;
+}
+.prev:hover, .next:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+.next{
+  right: 0;
+}
+.next:before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIgZmlsbD0iIzkxOGI3YiIvPgogIDwvZz4KPC9zdmc+Cg==);
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.prev{
+  left: 0;
+}
+.prev:before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIgZmlsbD0iIzkxOGI3YiIvPgogIDwvZz4KPC9zdmc+Cg==);
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
 .slick-dots li.slick-active button::after {
   font-family: 'slick';
   font-size: 10px;
@@ -47,7 +90,7 @@
 }
 
 .photos {
-  width: 50%;
+  width: 53%;
   float: left;
 }
 
@@ -69,24 +112,33 @@
 }
 
 .info_goods {
-  width: 50%;
+  width: 47%;
   float: left;
   padding-left: 80px;
   box-sizing: border-box;
 }
+ .name_dress{
+  text-transform: capitalize;
+  font-size: 2.1em;
+  padding: 0;
+  margin-bottom: 25px;
+}
 
 .code_dress {
   color: #dfdeda;
-  padding: 20px 0;
+  font-size: 1.1em;
+  margin-bottom: 35px;
 }
 
 .price {
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-bottom: 60px;
 }
 
 .select_good {
   color: #797762;
-  margin: 30px 0;
+  padding: 15px 0;
+  margin: 40px 0;
   width: 100%;
   border-bottom: 1px solid #e7e6e2;
   .label {
@@ -96,6 +148,7 @@
   .color, .size {
     float: right;
     text-align: right;
+    text-transform: capitalize;
     &:after {
       content: "";
       -webkit-transform: rotate(90deg);
@@ -110,17 +163,22 @@
   }
 }
 
-.button_buy {
+.button_buy{
   color: #918b7b;
   border: 1px solid #e0d1ba;
-  padding: 20px;
+  text-align: left;
+  padding: 20px 35px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 60px;
   display: inline-block;
   background: transparent;
   cursor: pointer;
   text-transform: capitalize;
+  margin-bottom: 60px;
   &:after {
     content: "";
-    padding-left: 50px;
+    padding-left: 160px;
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -134,9 +192,9 @@
 
 .question {
   cursor: pointer;
-  border-bottom: 1px solid #918b7b;
-  margin: 30px;
-  color: #918b7b;
+  border-bottom: 1px solid #7c745f;
+  margin: 40px;
+  color: #7c745f;
 
 }
 
@@ -144,6 +202,7 @@
   margin: 20px 0;
   display: inline-block;
   text-transform: uppercase;
+  color:#7c745f;
   &:after {
     content: "";
     width: 50px;
@@ -157,6 +216,32 @@
 .dimension_table {
   text-decoration: underline;
   text-transform: uppercase;
-  display: inline-block;
+display: inline-block;
   margin-left: 15px;
+  color: #7c745f;
+}
+.pop_up.dimension_table{
+  display: none;
+  z-index: 90;
+}
+.pop_up.dimension_table .center{
+   position: relative;
+  width: 96%;
+  height: 98%;
+  max-width: 800px;
+  margin: auto;
+  background-size: cover;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.pop_up.dimension_table .center img{
+  width: 100%;
+}
+.pop_up  .output{
+  position: absolute;
+  top:0;
+  right: 0;
 }
