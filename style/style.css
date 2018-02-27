@@ -512,6 +512,7 @@ main .exhibition .photo {
   padding: 5%;
 }
 .news .artical .category {
+  text-transform: uppercase;
   display: inline-block;
   color: #c0a375;
   font-size: 0.8em;
@@ -526,6 +527,7 @@ main .exhibition .photo {
   background: #c0a375;
 }
 .news .artical .date {
+  text-transform: uppercase;
   display: inline-block;
   color: #a7a7a7;
   font-size: 0.8em;
@@ -553,6 +555,7 @@ main .exhibition .photo {
   color: #c0a375;
   font-size: 0.8em;
   text-decoration: none;
+  font-style: italic;
 }
 .little_block_news .artical .read_more {
   display: block;
