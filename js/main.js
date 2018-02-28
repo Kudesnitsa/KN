@@ -9,6 +9,12 @@ jQuery(document).ready(function () {
     });
 
 
+    jQuery('.select_good.colors').click(function () {
+        jQuery('.select_good.colors').toggleClass("decor");
+
+    });
+
+
     jQuery('.show_menu').click(function () {
         jQuery('.black_fond').toggle();
         jQuery('.mobil_menu').toggleClass("active");
