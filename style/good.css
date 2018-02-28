@@ -292,10 +292,15 @@
 .block_goods .photo {
   width: 30%;
 }
-.block_goods .name_good {
+.block_goods .info_good {
   display: inline-block;
-  color: #bda177;
   padding: 5px;
+}
+.block_goods .info_good .name_good {
+  color: #bda177;
+}
+.block_goods .info_good .prise_good {
+  color: black;
 }
 .option-input {
   -webkit-appearance: none;

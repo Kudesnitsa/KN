@@ -151,6 +151,7 @@ input:focus {
   font-size: 2em;
   font-weight: normal;
   text-align: center;
+  text-transform: capitalize;
 }
 header .logotype {
   display: block;
