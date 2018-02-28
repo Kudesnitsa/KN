@@ -13,6 +13,12 @@ jQuery(document).ready(function () {
         jQuery('.select_good.colors').toggleClass("decor");
 
     });
+    jQuery('.select.colors li').on('click', function () {
+        var chosen_color = jQuery('.color.active');
+        var color = chosen_color.html();
+        chosen_color.html(jQuery(this).html());
+        jQuery(this).html(color);
+    });
 
 
     jQuery('.show_menu').click(function () {
