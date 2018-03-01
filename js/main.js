@@ -8,6 +8,15 @@ jQuery(document).ready(function () {
         slidesToScroll: 1
     });
 
+    jQuery('.dimension_table').click(function () {
+        jQuery('.size_table').toggle();
+
+    });
+    jQuery('.output').click(function () {
+        jQuery('.size_table').toggle();
+
+    });
+
 
     jQuery('.select_good.colors').click(function () {
         jQuery('.select_good.colors').toggleClass("decor");

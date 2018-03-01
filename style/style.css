@@ -1268,7 +1268,7 @@ select .chosen::first-letter {
     height: 80px;
     top: 0;
     position: fixed;
-    z-index: 20;
+    z-index: 9999;
     text-align: center;
     padding: 10px;
     -webkit-box-sizing: border-box;
