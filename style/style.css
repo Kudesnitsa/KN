@@ -140,6 +140,12 @@ button {
   font-family: "Open Sans";
   text-decoration: none;
 }
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
 input:active,
 input:hover,
 input:focus {
@@ -1127,6 +1133,7 @@ select .chosen::first-letter {
   height: 100%;
 }
 .goods .good .block .info_goods {
+  margin: 0;
   padding: 45px 35px;
   width: 100%;
   z-index: 11;
@@ -1388,7 +1395,7 @@ select .chosen::first-letter {
     border-style: solid;
   }
   .title {
-    background: #e8e4dc;
+    /*background: #e8e4dc;*/
     width: 100%;
     padding: 20px;
     -webkit-box-sizing: border-box;

@@ -177,6 +177,10 @@ button {
   font-family: "Open Sans";
   text-decoration: none;
 }
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
 
 input:active,
 input:hover,
@@ -1129,6 +1133,7 @@ footer .social_networks span {
 }
 
 .bread_crumbs {
+
   margin: 30px 0 25px;
   width: 30%;
   display: inline-block;
@@ -1340,6 +1345,7 @@ select .chosen::first-letter {
 }
 
 .goods .good .block .info_goods {
+  margin: 0;
   padding: 45px 35px;
   width: 100%;
   z-index: 11;
@@ -1647,7 +1653,7 @@ select .chosen::first-letter {
   }
 
   .title {
-    background: #e8e4dc;
+    /*background: #e8e4dc;*/
     width: 100%;
     padding: 20px;
     -webkit-box-sizing: border-box;

@@ -1,5 +1,6 @@
 .wrap.good {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .button_arrow {
@@ -7,6 +8,10 @@
   float: right;
   margin: 30px 0;
 
+}
+.head_good{
+  position: relative;
+  top: 0;
 }
 
 .left_arrow {
@@ -123,10 +128,10 @@
   width: 100%;
 }
 
-.info_goods {
+ .good .info_goods {
   width: 47%;
   float: left;
-  padding-left: 80px;
+  padding-left: 3%;
   box-sizing: border-box;
   margin-bottom: 100px;
 }
@@ -142,8 +147,11 @@
   font-family: "Lato light";
 }
 
-.info_goods .description .title {
+.info_goods .title {
   padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #7b7460;
 }
 
 .name_dress {
@@ -183,7 +191,7 @@
   width: 100%;
   top: 108%;
   background: white;
-  box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.41);
+  box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.2);
 }
 .decor .select.colors, .decor .select.sizes{
    opacity: 1;
@@ -229,12 +237,12 @@
   }
 }
 .decor {
-  border-bottom: 2px solid #bda177;
+  border-bottom: 2px solid #c0a375;
 
 }
 .select_good:before {
 
-  border-bottom: 2px solid #bda177;
+  border-bottom: 2px solid #c0a375;
   transform: scale3d(0, 1, 1);
 }
 
@@ -259,7 +267,7 @@
   }
 
   &::before {
-    border-bottom: 2px solid #bda177;
+    border-bottom: 2px solid #c0a375;
     transform: scale3d(0,1,1);
   }
 
@@ -275,8 +283,8 @@
 
 .button_buy {
   color: white;
-  border: 1px solid #e0d1ba;
-  background: #e0d1ba;
+  border: 1px solid #c0a375;
+  background: #c0a375;
   margin-right: 10%;
   &:after {
     content: "";
@@ -293,16 +301,16 @@
 }
 
 .button_question {
-  color: #bda177;
-  border: 1px solid #bda177;
+  color: #c0a375;
+  border: 1px solid #c0a375;
   background: white;
   &:after {
 
     content: "";
     width: 10px;
     height: 10px;
-    border-top: 2px solid #bda177;
-    border-left: 2px solid #bda177;
+    border-top: 2px solid #c0a375;
+    border-left: 2px solid #c0a375;
     transform: rotate(135deg) translate(0, 50%);
     display: inline-block;
     float: right;
@@ -395,6 +403,7 @@
   display: block;
 }
 
+
 .chek_goods {
   display: inline-block;
 }
@@ -418,7 +427,7 @@
 }
 
 .block_goods .info_good .name_good {
-  color: #bda177;
+  color: #c0a375;
 }
 
 .block_goods .info_good .prise_good {
@@ -437,7 +446,7 @@
   transition: all 0.15s ease-out 0s;
   background: white;
   border: 1px solid #cbd1d8;
-  color: #e0d1ba;
+  color: #c0a375;
   cursor: pointer;
   display: inline-block;
   margin-right: 0.5rem;
@@ -479,6 +488,37 @@
 body label {
   display: block;
   line-height: 20px;
+}
+.recom .good{
+  width: 25%;
+}
+.info_goods .button_arrow{
+  display: none;
+}
+@media (max-width: 768px) {
+  header{
+    display: none;
+  }
+  .head_good{
+    display: none;
+  }
+  .good .info_goods{
+    width: 100%;
+    padding: 0;
+  }
+  .info_goods .button_arrow{
+    display: block;
+  }
+  .photos{
+    width: 100%;
+  }
+  .recom .good{
+    width: 50%;
+  }
+  .block_goods{
+    width: 100%;
+    text-transform: capitalize;
+  }
 }
 
 
