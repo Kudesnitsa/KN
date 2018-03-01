@@ -80,3 +80,15 @@
   color: #a48450;
   border-bottom: 1px solid #a48450;
 }
+@media (max-width: 768px) {
+  .news {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .news .artical {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    padding: 0 !important;
+  }
+}
