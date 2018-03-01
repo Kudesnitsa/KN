@@ -34,8 +34,9 @@
   color: white;
 }
 .text_artical {
+  max-height: 600px;
   text-align: justify;
-  width: 60%;
+  width: 70%;
   margin: 0 auto 15%;
   word-spacing: normal;
 }

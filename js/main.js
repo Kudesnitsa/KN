@@ -8,13 +8,17 @@ jQuery(document).ready(function () {
         slidesToScroll: 1
     });
 
+    jQuery('.button_question').click(function () {
+        jQuery('.pop_question').toggle();
+
+    });
+
     jQuery('.dimension_table').click(function () {
         jQuery('.size_table').toggle();
 
     });
     jQuery('.output').click(function () {
-        jQuery('.size_table').toggle();
-
+        jQuery('.pop_up').hide();
     });
 
 
@@ -118,9 +122,7 @@ jQuery(document).ready(function () {
     });
 
 
-    jQuery('.output').click(function () {
-        jQuery('.persona_office_block').toggle();
-    });
+
 
 
     jQuery('.personal_office').click(function () {
