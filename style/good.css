@@ -190,25 +190,25 @@
   -webkit-box-shadow: inset 0 0 50px rgba(136, 136, 136, 0.43);
           box-shadow: inset 0 0 50px rgba(136, 136, 136, 0.43);
 }
-.select_good {
+.decor.cast_select .active {
+  text-align: right;
+}
+.decor.cast_select .active:after {
+  content: "";
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.cast_select {
   color: #797762;
   padding: 15px 0;
   margin: 40px 0 0;
   width: 100%;
   border-bottom: 1px solid #e7e6e2;
 }
-.select_good .label {
-  float: left;
-  text-transform: uppercase;
-}
-.select_good .color,
-.select_good .size {
-  float: right;
+.cast_select .active {
   text-align: right;
-  text-transform: capitalize;
 }
-.select_good .color:after,
-.select_good .size:after {
+.cast_select .active:after {
   content: "";
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -218,16 +218,24 @@
   display: inline-block;
   margin: 0 5px;
   background-size: contain;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s ;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+.cast_select .label {
+  float: left;
+  text-transform: uppercase;
 }
 .decor {
   border-bottom: 2px solid #c0a375;
 }
-.select_good:before {
+.cast_select:before {
   border-bottom: 2px solid #c0a375;
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
 }
-.select_good:before {
+.cast_select:before {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   -webkit-transition: -webkit-transform 0.5s;
@@ -235,8 +243,7 @@
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
-.select_good.colors::before,
-.select_good.sizes::before {
+.cast_select::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   content: '';
@@ -244,8 +251,7 @@
   width: 100%;
   height: 100%;
 }
-.select_good.colors::before,
-.select_good.sizes::before {
+.cast_select::before {
   top: 0;
   left: 0;
   height: 100%;
@@ -253,14 +259,12 @@
   -webkit-transform-origin: center;
           transform-origin: center;
 }
-.select_good.colors::before,
-.select_good.sizes::before {
+.cast_select::before {
   border-bottom: 2px solid #c0a375;
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
 }
-.select_good.colors:hover::before,
-.select_good.sizes:hover::before {
+.cast_select:hover::before {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   -webkit-transition: -webkit-transform 0.5s;
@@ -401,7 +405,7 @@
   padding: 1px;
   border: 1px solid #c0a375;
   background: white;
-  border-radius: 30%;
+  border-radius: 10%;
   border-image-slice: 50;
   border-image-repeat: repeat;
 }
@@ -495,13 +499,9 @@ body label {
   width: 90%;
   padding: 20px 10px;
   font-size: 1em;
-  float: left;
   display: inline-block;
   border: none;
   border-bottom: 1px solid #e8e6e3;
-}
-.pop_question .country .label {
-  padding-top: 20px;
 }
 .pop_question .center .forma {
   width: 90%;
@@ -520,12 +520,12 @@ body label {
 .pop_question .title_h1 {
   margin: 30px;
 }
-.pop_question .select_good {
+.pop_question .cast_select {
   margin: 0;
   width: 90%;
   padding: 20px 10px ;
 }
-.pop_question .select_good .label {
+.pop_question .cast_select .label {
   text-transform: capitalize;
 }
 .pop_question .messages {
@@ -539,7 +539,7 @@ body label {
   border: none;
   border-bottom: 1px solid #e8e6e3;
   max-height: 80px;
-  height: 80px;
+  height: 75px;
 }
 .center .title_h1 {
   color: #5e5a4f;
@@ -553,6 +553,25 @@ body label {
   padding: 10px 40px;
   display: table;
   margin: 40px auto;
+}
+.cast_select {
+  position: relative;
+}
+.select {
+  opacity: 0 ;
+  z-index: -1;
+  position: absolute;
+  text-align: right;
+  right: 0;
+  width: 100%;
+  top: 108%;
+  background: white;
+  -webkit-box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.2);
+          box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.2);
+}
+.decor .select {
+  opacity: 1 ;
+  z-index: 1000030;
 }
 @media (max-width: 768px) {
   .head_good {

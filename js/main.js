@@ -7,40 +7,28 @@ jQuery(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
-
     jQuery('.button_question').click(function () {
         jQuery('.pop_question').toggle();
-
     });
-
     jQuery('.dimension_table').click(function () {
         jQuery('.size_table').toggle();
-
     });
+
     jQuery('.output').click(function () {
         jQuery('.pop_up').hide();
     });
 
 
-    jQuery('.select_good.colors').click(function () {
-        jQuery('.select_good.colors').toggleClass("decor");
+    jQuery('.cast_select').on('click', function () {
+        jQuery(this).toggleClass("decor");
+    });
 
-    });
-    jQuery('.select.colors li').on('click', function () {
-        var chosen_color = jQuery('.color.active');
-        var color = chosen_color.html();
-        chosen_color.html(jQuery(this).html());
-        jQuery(this).html(color);
-    });
-    jQuery('.select_good.sizes').click(function () {
-        jQuery('.select_good.sizes').toggleClass("decor");
 
-    });
-    jQuery('.select.sizes li').on('click', function () {
-        var chosen_size = jQuery('.size.active');
-        var size = chosen_size.html();
-        chosen_size.html(jQuery(this).html());
-        jQuery(this).html(size);
+    jQuery('.select li').on('click', function () {
+        var chosen= jQuery(this).parents('.cast_select').find('.active');
+        var chosen_html = chosen.html();
+        chosen.html(jQuery(this).html());
+        jQuery(this).html(chosen_html);
     });
 
 
