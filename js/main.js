@@ -19,6 +19,16 @@ jQuery(document).ready(function () {
         chosen_color.html(jQuery(this).html());
         jQuery(this).html(color);
     });
+    jQuery('.select_good.sizes').click(function () {
+        jQuery('.select_good.sizes').toggleClass("decor");
+
+    });
+    jQuery('.select.sizes li').on('click', function () {
+        var chosen_size = jQuery('.size.active');
+        var size = chosen_size.html();
+        chosen_size.html(jQuery(this).html());
+        jQuery(this).html(size);
+    });
 
 
     jQuery('.show_menu').click(function () {

@@ -149,30 +149,38 @@
   font-size: 1.9em;
   margin: 30px 0;
 }
-.colors {
+.colors,
+.sizes {
   position: relative;
 }
-.select.colors {
+.select.colors,
+.select.sizes {
   z-index: -1;
   opacity: 0;
   position: absolute;
   text-align: right;
   right: 0;
   width: 100%;
-  top: 100%;
+  top: 108%;
   background: white;
   -webkit-box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.41);
           box-shadow: 4px 4px 4px rgba(173, 173, 170, 0.41);
 }
-.decor .select.colors {
+.decor .select.colors,
+.decor .select.sizes {
   opacity: 1;
   -webkit-transition: opacity 0.8s ;
   transition: opacity 0.8s ;
   z-index: 30;
 }
-.select.colors li {
+.select li {
+  cursor: pointer;
   padding: 5px 10px;
   z-index: 33;
+}
+.select li:hover {
+  -webkit-box-shadow: inset 0 0 50px rgba(136, 136, 136, 0.43);
+          box-shadow: inset 0 0 50px rgba(136, 136, 136, 0.43);
 }
 .select_good {
   color: #797762;
@@ -202,6 +210,55 @@
   display: inline-block;
   margin: 0 5px;
   background-size: contain;
+}
+.decor {
+  border-bottom: 2px solid #bda177;
+}
+.select_good:before {
+  border-bottom: 2px solid #bda177;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+}
+.select_good:before {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.select_good.colors::before,
+.select_good.sizes::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.select_good.colors::before,
+.select_good.sizes::before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.select_good.colors::before,
+.select_good.sizes::before {
+  border-bottom: 2px solid #bda177;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+}
+.select_good.colors:hover::before,
+.select_good.sizes:hover::before {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .button_buy {
   color: white;
