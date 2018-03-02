@@ -24,6 +24,8 @@ jQuery(document).ready(function () {
     });
 
 
+
+
     jQuery('.select li').on('click', function () {
         var chosen= jQuery(this).parents('.cast_select').find('.active');
         var chosen_html = chosen.html();

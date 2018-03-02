@@ -157,10 +157,6 @@
   font-size: 1.9em;
   margin: 30px 0;
 }
-.colors,
-.sizes {
-  position: relative;
-}
 .select.colors,
 .select.sizes {
   z-index: -1;
@@ -311,7 +307,7 @@
 }
 .button_buy,
 .button_question {
-  font-family: "Open Sans";
+  font-family: 'Lato Regular';
   font-size: 0.9em;
   text-align: left;
   padding: 20px 35px;

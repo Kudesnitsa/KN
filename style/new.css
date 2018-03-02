@@ -24,22 +24,37 @@
   color: #c0a375 ;
   display: inline-block;
   padding: 10px;
+  text-transform: capitalize;
 }
 .new .head_photo .date {
   display: inline-block;
   color: white;
   padding: 10px;
+  text-transform: lowercase;
 }
 .new .head_photo .name_artical {
   color: white;
+  font-family: "PT Serif";
 }
-.text_artical {
+.news .artical .text_artical {
   max-height: 600px;
   text-align: justify;
   width: 70%;
   margin: 0 auto 15%;
   word-spacing: normal;
+  font-family: 'Lato Regular';
+  line-height: 27px;
+  height: auto;
 }
 .text_artical p {
   padding: 20px ;
+}
+@media (max-width: 768px) {
+  .wrap_news {
+    padding: 0;
+    margin: 0;
+  }
+  .text_artical {
+    width: 100%;
+  }
 }
