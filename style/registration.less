@@ -1,0 +1,158 @@
+.regist {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  .title_h1 {
+    font-size: 1.6em;
+    padding: 70px 0 0;
+    color: #5e5a4f;
+    text-transform: uppercase;
+  }
+}
+
+.registration.form {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  max-width: 550px;
+  max-height: 700px;
+  margin: auto;
+  padding: 0 0;
+  background-size: cover;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: white;
+
+  box-sizing: border-box;
+}
+
+/*.option-input {
+  appearance: none;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: white;
+  border: 1px solid #cbd1d8;
+  color: #c0a375;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.option-input:hover {
+  background: white;
+}
+
+.option-input:checked {
+  background: white;
+}
+
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 16.66667px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: white;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+body label {
+  display: block;
+  line-height: 20px;
+}*/
+
+label, .cast_select {
+  color: #7b7460;
+  border-bottom: 1px solid #e8e6e3;
+  display: table;
+  margin: 5px auto;
+  padding: 25px 10px 10px;
+  width: 60%;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.9em;
+
+}
+
+label span, .cast_select .label {
+  text-transform: capitalize;
+  color: #7b7460;
+  width: 45%;
+  font-family: "Lato light";
+}
+
+.full_name, .country, .city {
+  text-transform: capitalize;
+}
+
+input {
+  font-family: "Lato light";
+  vertical-align: top;
+  text-align: right;
+  display: inline-block;
+  color: #7b7460;
+  width: 50%;
+  height: 100%;
+  font-size: 0.9em;
+  border: none;
+  box-sizing: border-box;
+  float: right;
+}
+
+.regist_button {
+  text-transform: uppercase;
+  background: #c0a375;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  display: table;
+  margin: 60px auto 1%;
+  letter-spacing: 2px;
+  font-family: "Lato Regular";
+  transition: 0.3s ;
+}
+
+.regist_button:hover {
+  opacity: 0.8;
+}
+
+ul.select {
+  width: 100%;
+}
+
+@media (max-width: 1550px) {
+  .regist {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    img {
+      display: none;
+    }
+  }
+}
