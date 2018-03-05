@@ -129,7 +129,8 @@
 .info_goods .description {
   padding: 30px 0;
   line-height: 24px;
-  font-family: "Lato light";
+  font-family: "Lato";
+  font-weight: 300;
 }
 .info_goods .title {
   padding: 10px 0;
@@ -216,7 +217,8 @@
 }
 .button_buy,
 .button_question {
-  font-family: 'Lato Regular';
+  font-family: "Lato";
+  font-weight: 400;
   font-size: 0.9em;
   text-align: left;
   padding: 20px 35px;
@@ -435,7 +437,8 @@ body label {
 }
 .pop_question .messages {
   float: left;
-  font-family: "Lato Regular";
+  font-family: "Lato";
+  font-weight: 400;
   text-transform: capitalize;
   color: #797762;
   font-size: 1em;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,16 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="http://uk.allfont.net/allfont.css?fonts=aquarelle" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/login.css">
     <script src="http://code.jquery.com/jquery-1.12.4.js"
             integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-    <title>kaya nova</title>
+    <title>registration kaya nova</title>
 </head>
 <body>
 <header class="clearfix">
-    <div class="wrap_category">
+    <div class="wrap">
         <div class="show_menu">
-
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzIDUzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MyA1MzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yLDEzLjVoNDljMS4xMDQsMCwyLTAuODk2LDItMnMtMC44OTYtMi0yLTJIMmMtMS4xMDQsMC0yLDAuODk2LTIsMlMwLjg5NiwxMy41LDIsMTMuNXoiIGZpbGw9IiNjMWJjYWQiLz4KCQk8cGF0aCBkPSJNMiwyOC41aDQ5YzEuMTA0LDAsMi0wLjg5NiwyLTJzLTAuODk2LTItMi0ySDJjLTEuMTA0LDAtMiwwLjg5Ni0yLDJTMC44OTYsMjguNSwyLDI4LjV6IiBmaWxsPSIjYzFiY2FkIi8+CgkJPHBhdGggZD0iTTIsNDMuNWg0OWMxLjEwNCwwLDItMC44OTYsMi0ycy0wLjg5Ni0yLTItMkgyYy0xLjEwNCwwLTIsMC44OTYtMiwyUzAuODk2LDQzLjUsMiw0My41eiIgZmlsbD0iI2MxYmNhZCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
         </div>
         <div class="sub_nav">
             <div class="left">
@@ -56,12 +58,14 @@
                 <li>новості</li>
                 <li>контакти</li>
             </ul>
-            <div class="search"><input type="text" class="input_search" placeholder="введите название товара"></div>
+            <div class="search"><input type="text" autofocus class="input_search" placeholder="введите название товара">
+            </div>
         </nav>
         <div class="basket_mob">
-
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMzIDMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMyAzMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yOC4zMTMsMzNINC42ODhjLTAuMTM3LDAtMC4yNjgtMC4wNTYtMC4zNjItMC4xNTVjLTAuMDk0LTAuMDk5LTAuMTQ0LTAuMjMyLTAuMTM4LTAuMzY5TDUuMzEzLDguODUxICAgYzAuMDEzLTAuMjY3LDAuMjMyLTAuNDc2LDAuNS0wLjQ3NmgyMS4zNzVjMC4yNjcsMCwwLjQ4NywwLjIwOSwwLjUsMC40NzZsMS4xMjUsMjMuNjI1YzAuMDA2LDAuMTM3LTAuMDQzLDAuMjctMC4xMzgsMC4zNjkgICBDMjguNTgsMzIuOTQ0LDI4LjQ0OSwzMywyOC4zMTMsMzN6IE01LjIxMiwzMmgyMi41NzZMMjYuNzExLDkuMzc1SDYuMjg5TDUuMjEyLDMyeiIgZmlsbD0iI2MyYmNhYyIvPgoJPHBhdGggZD0iTTIxLjkwNSwxMS4zNzVjLTAuMjc2LDAtMC41LTAuMjI0LTAuNS0wLjV2LTQuOTdDMjEuNDA1LDMuMjAxLDE5LjIwNSwxLDE2LjUsMXMtNC45MDUsMi4yMDEtNC45MDUsNC45MDV2NC45NyAgIGMwLDAuMjc2LTAuMjI0LDAuNS0wLjUsMC41cy0wLjUtMC4yMjQtMC41LTAuNXYtNC45N0MxMC41OTUsMi42NDksMTMuMjQ0LDAsMTYuNSwwczUuOTA1LDIuNjQ5LDUuOTA1LDUuOTA1djQuOTcgICBDMjIuNDA1LDExLjE1MSwyMi4xODIsMTEuMzc1LDIxLjkwNSwxMS4zNzV6IiBmaWxsPSIjYzJiY2FjIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="/>
         </div>
     </div>
+
     <div class="mobil_menu">
         <div class="search_mobil"><input type="text" class="input_search_mob" placeholder="поиск"><input type="button"
                                                                                                          class="mob_butt_search">

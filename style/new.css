@@ -58,7 +58,8 @@
   width: 70%;
   margin: 0 auto 20px;
   word-spacing: normal;
-  font-family: 'Lato Regular';
+  font-family: "Lato";
+  font-weight: 400;
   line-height: 29px;
   font-size: 18px;
   height: auto;
