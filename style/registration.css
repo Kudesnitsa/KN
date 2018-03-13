@@ -125,13 +125,15 @@ input,
 ul.select {
   width: 100%;
 }
+.cast_select .label {
+  float: left;
+  text-transform: capitalize;
+}
 @media (max-width: 1550px) {
   .regist {
     position: relative;
     width: 100%;
     height: 750px;
-  }
-  .regist img {
-    display: none;
+    background: white ;
   }
 }

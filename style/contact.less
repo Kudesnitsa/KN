@@ -1,0 +1,98 @@
+.description{
+  text-align: center;
+  margin: 0 0 75px;
+}
+.block_contacts{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+.block_contacts>.info{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-right: 3px solid #e8dccc;
+  background: rgba(236, 227, 213, 0.5);
+  float: left;
+}
+.block_contacts>.info> div {
+  padding:30px ;
+}
+.block_contacts>.info> div>.info {
+  padding:5px 0;
+}
+label{
+  color: #c0a375;
+  font-size:0.9em;
+  margin: 10px 0;
+}
+textarea{
+  width: 100%;
+  min-height: 70px;
+  border: none;
+  color: #7b7460;
+  border-bottom: 1px solid #e8e6e3;
+  padding: 25px 10px 10px;
+  font-size: 0.9em;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+input{
+  font-family: Lato;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  color: #7b7460;
+  border-bottom: 1px solid #e8e6e3;
+  display: table;
+  padding: 25px 10px 10px;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.9em;
+  text-align: left;
+}
+.block_contacts>.contact_form{
+  width: 50%;
+  box-sizing: border-box;
+  padding:0  50px;
+  float: left;
+}
+.block_contacts>.contact_form .title{
+  font-family: "PT Serif";
+  font-size: 1.5em;
+
+
+}
+.button.send {
+  text-transform: uppercase;
+  background: #c0a375;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  width: auto;
+  box-sizing: border-box;
+  height: auto;
+  display: table;
+  margin: 10% 0;
+  letter-spacing: 2px;
+  font-family:"Lato"; font-weight: 400;
+  transition: 0.3s;
+}
+@media (max-width: 768px){
+  .block_contacts>.contact_form .title {
+  padding: 0;
+    color: #5e5a4f;
+  }
+  .block_contacts>.info{
+    width: 100%;
+    border: none;
+    border-bottom : 3px solid #e8dccc;
+  }
+  .block_contacts>.contact_form{
+    width: 100%;
+    padding: 50px;
+
+  }
+}

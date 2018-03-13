@@ -15,6 +15,9 @@ jQuery(document).ready(function () {
     jQuery('.cast_select').on('click', function () {
         jQuery(this).toggleClass("decor");
     });
+    jQuery('.faq_question').on('click', function () {
+    jQuery(this).toggleClass("decor");
+});
 
 
 
