@@ -13,6 +13,12 @@
     <link rel="stylesheet" type="text/css" href="style/faq.css">
     <script src="http://code.jquery.com/jquery-1.12.4.js"
             integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/jquery.jscrollpane.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
     <title>registration kaya nova</title>
 </head>
 <body>
@@ -45,9 +51,7 @@
         </div>
         <a class="logotype">
             <img src="img/logo.png">
-            <div class="name_site">
-                kaya wedding
-            </div>
+
         </a>
         <nav class="main_menu">
             <ul>
@@ -109,115 +113,125 @@
     </div>
 </header>
 <main>
-<section class="wrap">
-    <section class="head_good">
-        <div class="bread_crumbs">
-            <span class="item">головна</span>
-            <span class="item active">FAQ</span>
+
+    <section class="wrap faq">
+        <section class="head_good">
+            <div class="bread_crumbs">
+                <span class="item">головна</span>
+                <span class="item active">FAQ</span>
+            </div>
+        </section>
+        <div class="title_h1">FAQ</div>
+        <div class="blocks_faq" >
+            <div id="wrapper">
+                <div class="for_bride">
+                    <div class="title">Вопроси от салона</div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+
+                </div>
+                <div class="for salons">
+                    <div class="title">Вопроси от невест</div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+                    <div class="faq_blok">
+                        <div class="faq_question">
+                            Какое время на изготовление заказа и доставку?
+                        </div>
+                        <div class="faq_answers">
+                            Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также
+                            есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-    <div class="blocks_faq">
-        <div class="title_h1">FAQ</div>
-        <div class="for_bride">
-            <div class="sub_title">Для неречен</div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-
-        </div>
-        <div class="for salons">
-            <div class="sub_title">Для салонив</div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-            <div class="faq_blok">
-                <div class="faq_question">
-                    Какое время на изготовление заказа и доставку?
-                </div>
-                <div class="faq_answers">
-                    Сроки производства на новую коллекцию 10 недель. На все остальные - 4 недели. У нас также есть платья, которые мы можем пошить всего за одну неделю (спрашивайте у менеджера).
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
 </main>
 <footer>
     <div class="wrap">
         <div class="block_footer_category contact_information">
             <a class="logotype">
                 <img src="img/logo.png">
-                <div class="name_site">
-                    kaya wedding
-                </div>
+
             </a>
             <ul class="addresses_ul">
                 <li>Krakow, str. marszalka jozefa</li>
@@ -274,6 +288,16 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery('#wrapper').jScrollPane(
+            {
+                horizontalGutter: 30,
+                verticalGutter: 30
+            }
+        );
+    });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

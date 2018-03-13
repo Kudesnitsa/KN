@@ -17,7 +17,9 @@ jQuery(document).ready(function () {
     });
     jQuery('.faq_question').on('click', function () {
     jQuery(this).toggleClass("decor");
-});
+        jQuery(function(){
+            jQuery('.blocks_faq').jScrollPane();
+        });
 
 
 
